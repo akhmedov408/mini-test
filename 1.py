@@ -1,17 +1,27 @@
-def check_numbers(numbers):
-    positive_numbers = []
-    negative_numbers = []
+# 1. SyntaxError (SINTEKS XATOLIK)
+# if True print("Hello")  # Komment qilingan, ochib ishlatishingiz mumkin
 
-    for number in numbers:
-        if number > 0:
-            positive_numbers.append(number)
-        elif number < 0:
-            negative_numbers.append(number)
+# 2. EOL va EOF xatoliklari
+# print("Hello  # EOL (Qator oxirida yopilmagan string)
+# def my_function():      # EOF (Funktsiya ochilgan, lekin yopilmagan)
+#     print("Hello")
 
-    return positive_numbers, negative_numbers
+# 3. IndentationError (JOY TASHLASHDA XATOLIK)
+# def my_function():
+# print("Hello")  # To'g'ri joy tashlanmagan
 
-# Misol uchun
-numbers = [10, -5, 0, 23, -42, 7, -1]
-positive, negative = check_numbers(numbers)
-print("Musbat sonlar:", positive)
-print("Manfiy sonlar:", negative)
+# 4. ValueError
+# int("abc")  # "abc" son emas, shuning uchun ValueError
+
+# 5. TypeError
+# "5" + 5  # Matnni son bilan qo'shib bo'lmaydi
+
+# 6. NameError
+# print(unknown_variable)  # unknown_variable aniqlanmagan
+
+# 7. IndexError
+# my_list = [1, 2, 3]
+# print(my_list[5])  # Indeks diapazondan tashqarida
+
+# 8. ZeroDivisionError
+# result = 10 / 0  # Nolga bo'lish taqiqlangan
